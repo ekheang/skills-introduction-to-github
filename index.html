@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World!</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for the "Inter" font -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 flex items-center justify-center min-h-screen font-sans p-4">
+
+    <!-- Main Card Container -->
+    <div class="w-full max-w-md bg-white p-8 md:p-10 rounded-xl shadow-2xl border border-blue-100 transform hover:scale-[1.02] transition duration-300 ease-in-out">
+
+        <!-- Header -->
+        <header class="text-center mb-6">
+            <h1 class="text-5xl font-extrabold text-blue-600 mb-2 tracking-tight">
+                Hello, World!
+            </h1>
+            <p class="text-xl text-gray-500">
+                A classic greeting in modern style.
+            </p>
+        </header>
+
+        <!-- Content Box -->
+        <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
+            <p class="text-lg text-gray-700">
+                This simple message confirms that your HTML structure, Tailwind CSS styling, and single-file setup are all working perfectly.
+            </p>
+        </div>
+
+        <!-- Footer / Technical Info -->
+        <footer class="mt-6 text-center">
+            <p class="text-sm text-gray-400">
+                Generated using a single HTML file with Tailwind CSS for responsiveness.
+            </p>
+        </footer>
+
+    </div>
+</body>
+</html>
